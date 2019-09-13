@@ -23,3 +23,25 @@ $(document).ready(function () {
     var trainFrequency;
 
     var database = firebase.database(); 
+
+// ------------- Submit Button (IE: Add Train Button) Function ---------------
+
+$("#submit-button").on("click", function(event){
+    event.preventDefault();
+    
+    trainName = $("#train-name").val().trim();
+    trainDestination = $("#train-destination").val().trim();
+    firstTime = $("#first-train-time").val().trim();
+    trainFrequency = $("#train-frequency").val().trim();
+
+    console.log(trainName, trainDestination, firstTime, trainFrequency);
+})
+
+
+
+
+
+
+
+
+});
