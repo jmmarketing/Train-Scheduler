@@ -18,14 +18,84 @@
 
 <body>
 
+    <div class="container">
 
+        <!--------- Heder ------------->
+        <div class="jumbotron">
+            <h1 class="display-4">Hogwarts Express Schedule</h1>
+            <p class="lead">The Polar Express Gots Nothin' On Us</p>
+        </div>
+
+        <!---------- Current EMployees Table ------------>
+        <div class="card">
+            <div class="card-header">
+                Current Train Schedule
+            </div>
+            <div class="card-body">
+
+                <!------------ TABLE -------------->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listTrains">
+                        
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <!---------- Add Employee Form ------------>
+        <div class="card mt-3">
+            <div class="card-header">
+                Add Train
+            </div>
+            <div class="card-body">
+
+                <!----------- FORM -------------->
+                <form>
+                    <div class="form-group">
+                        <label for="trainName">Train Name</label>
+                        <input type="text" class="form-control" id="train-name" placeholder="Great Plains Zephyr">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="employee-role" placeholder="Wyoming">
+                    </div>
+                    <div class="form-group">
+                        <label for="first-train">First Train Time (hh:mm | Military)</label>
+                        <input type="text" class="form-control" id="first-train-time" placeholder="15:30 [Would be 3:30 PM]">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency (min)</label>
+                        <input type="text" class="form-control" id="train-frequency" placeholder="15">
+                    </div>
+                    <button type="submit" id="submit-button" class="btn btn-primary float-right">Add Train</button>
+                </form>
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
 
 
 <!------ Javascript, Firebase, & Moment Tag-->
 <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
-
+<script src="assets/javascript/app.js"></script>
 </body>
 
 </html>
