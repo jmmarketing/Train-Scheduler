@@ -35,6 +35,13 @@ $("#submit-button").on("click", function(event){
     trainFrequency = $("#train-frequency").val().trim();
 
     console.log(trainName, trainDestination, firstTime, trainFrequency);
+
+    database.ref("trains/").push({
+        tName: trainName,
+        tDestination: trainDestination,
+        fTime: firstTime,
+        tFrequency: trainFrequency
+    });
 })
 
 
