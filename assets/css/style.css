@@ -1,0 +1,40 @@
+body{
+    background: url(../images/train-bg.jpg) no-repeat center fixed;
+    background-size:cover;
+    font-family: 'Lora', serif;
+}
+
+.fa-times-circle:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.jumbotron{
+    background-color:transparent;
+    text-align: center;
+    margin-bottom:0;
+}
+
+h1{
+    font-family: 'Rye',cursive,sans-serif;
+}
+
+#train-form{
+    background-color: transparent;
+    border: 1px solid #f8f9fa;
+}
+#form-header{
+    border-bottom: 1px solid #f8f9fa;
+    color:whitesmoke;
+    text-align: center;
+    font-weight:bold;
+}
+
+[for="trainName"], [for="destination"], [for="first-train"], [for="frequency"]{
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+#train-table{
+    background-color: #ffffffbf;
+}
