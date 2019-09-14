@@ -9,6 +9,9 @@ body{
     cursor: pointer;
 }
 
+.row{
+    margin-bottom:12px;
+}
 .jumbotron{
     background-color:transparent;
     text-align: center;
