@@ -20,3 +20,12 @@ UCSD - Homework 7 - Train Scheduler App w/ Firebase
   * Users from many different machines must be able to view same train times.
   
   * Styling and theme are completely up to you. Get Creative!
+
+# Goal
+Goal of this project was to dive into learning and utilizing Firebase Realtime Databases, to keep persistent data on the page. As well as using Moments.js to calculate times. 
+
+#Libraries Used
+- Font Awesome
+- Moments.JS
+- Jquery
+- Bootstrap
